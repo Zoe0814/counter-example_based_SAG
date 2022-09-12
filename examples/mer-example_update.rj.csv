@@ -1,0 +1,6 @@
+Task ID, Job ID, r min, r max, cos min, cos max, deadline, Priority, deadline miss
+1, 1, 0, 35, 10, 15, 60, 1, 0
+1, 2, 0, 30, 15, 20, 54, 2, 1
+1, 3, 0, 40, 12, 16, 60, 3, 0
+1, 4, 10, 45, 15, 20, 60, 4, 0
+1, 5, 15, 45, 18, 30, 65, 5, 0

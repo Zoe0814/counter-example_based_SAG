@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -DNDEBUG CMakeFiles/nptest.dir/src/nptest.cpp.o CMakeFiles/nptest.dir/lib/src/OptionParser.cpp.o -o nptest 

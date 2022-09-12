@@ -1,0 +1,15 @@
+digraph {
+	S1[label="S1: [0, 0]\nER=0"];
+	S2[label="S2: [2, 4]\nER=2"];
+	S3[label="S3: [7, 8]\nER=0"];
+	S4[label="S4: [7, 10]\nER=6"];
+	S5[label="S5: [12, 21]\nER=9"];
+	S6[label="S6: [13, 23]\nER=N/A"];
+	S1 -> S2[label="T1 J2\nDL=10\nES=0\nLS=2\nEF=2\nLF=4",fontsize=8];
+	S1 -> S3[label="T1 J1\nDL=10\nES=2\nLS=3\nEF=7\nLF=8",fontsize=8];
+	S2 -> S4[label="T1 J1\nDL=10\nES=2\nLS=4\nEF=7\nLF=9",fontsize=8];
+	S3 -> S4[label="T1 J2\nDL=10\nES=7\nLS=8\nEF=9\nLF=10",fontsize=8];
+	S4 -> S5[label="T1 J3\nDL=25\nES=7\nLS=8\nEF=12\nLF=21",fontsize=8];
+	S5 -> S6[label="T1 J4\nDL=13\nES=12\nLS=21\nEF=13\nLF=23",color=Red,fontcolor=Red,fontsize=8];
+S6[color=Red];
+}

@@ -1,0 +1,27 @@
+digraph {
+	S1[label="S1: [0, 0]\nER=0"];
+	S2[label="S2: [1, 2]\nER=0"];
+	S3[label="S3: [8, 10]\nER=0"];
+	S4[label="S4: [11, 22]\nER=10"];
+	S5[label="S5: [11, 12]\nER=0"];
+	S6[label="S6: [12, 25]\nER=18"];
+	S7[label="S7: [19, 27]\nER=26"];
+	S8[label="S8: [27, 32]\nER=28"];
+	S9[label="S9: [35, 41]\nER=26"];
+	S10[label="S10: [35, 44]\nER=30"];
+	S11[label="S11: [31, 34]\nER=28"];
+	S12[label="S12: [36, 43]\nER=30"];
+	S1 -> S2[label="T1 J1\nDL=10\nES=0\nLS=0\nEF=1\nLF=2",fontsize=8];
+	S2 -> S3[label="T1 J7\nDL=30\nES=1\nLS=2\nEF=8\nLF=10",fontsize=8];
+	S3 -> S4[label="T1 J9\nDL=60\nES=8\nLS=9\nEF=11\nLF=22",fontsize=8];
+	S3 -> S5[label="T1 J2\nDL=30\nES=10\nLS=10\nEF=11\nLF=12",fontsize=8];
+	S4 -> S6[label="T1 J2\nDL=30\nES=11\nLS=22\nEF=12\nLF=24",fontsize=8];
+	S5 -> S6[label="T1 J9\nDL=60\nES=11\nLS=12\nEF=14\nLF=25",fontsize=8];
+	S6 -> S7[label="T1 J3\nDL=30\nES=18\nLS=25\nEF=19\nLF=27",fontsize=8];
+	S7 -> S8[label="T1 J4\nDL=40\nES=26\nLS=30\nEF=27\nLF=32",fontsize=8];
+	S7 -> S9[label="T1 J8\nDL=60\nES=28\nLS=29\nEF=35\nLF=41",fontsize=8];
+	S8 -> S10[label="T1 J8\nDL=60\nES=28\nLS=32\nEF=35\nLF=44",fontsize=8];
+	S8 -> S11[label="T1 J5\nDL=50\nES=30\nLS=32\nEF=31\nLF=34",fontsize=8];
+	S9 -> S12[label="T1 J4\nDL=40\nES=35\nLS=41\nEF=36\nLF=43",color=Red,fontcolor=Red,fontsize=8];
+S12[color=Red];
+}

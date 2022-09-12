@@ -1,0 +1,8 @@
+digraph {
+	S1[label="S1: [0, 0]\nER=0"];
+	S2[label="S2: [35, 41]\nER=26"];
+	S3[label="S3: [36, 43]\nER=30"];
+	S1 -> S2[label="T1 J8\nDL=60\nES=28\nLS=29\nEF=35\nLF=41",fontsize=8];
+	S2 -> S3[label="T1 J4\nDL=40\nES=35\nLS=41\nEF=36\nLF=43",color=Red,fontcolor=Red,fontsize=8];
+S3[color=Red];
+}
